@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const ageOne =prompt("Enter your age")
+        if (ageOne > 18){
+            console.log("You are old enough to drive")
+        }else{
+            let years = 18 - ageOne
+            console.log(`you have ${years} more to drive`)
+        }
+
+        const yourAge = prompt("Enter your age")
+        const myAge = prompt("Enter my age")
+        let newAge = yourAge - myAge
+        if (yourAge > myAge){
+            console.log(`you are ${newAge} older than me`)
+        }else if(yourAge < myAge){
+            console.log(`I am  ${newAge} older than you`)
+        }
+
+        let a = 4;
+        let b = 3;
+
+        if(a > b){
+            console.log(`${a} is greater than ${b}`)
+        }else if (a < b){
+            console.log(`${a} is less than b ${b}`)
+        }
+
+
+        let evenNumber = prompt("Enter a number")
+        if ( evenNumber % 2 === 0){
+            console.log(`${evenNumber} is an even number`)
+        }else if( evenNumber % 2 !==0){
+            console.log(`${evenNumber} is not an even number`)
+        }
+
+
+        const score = prompt("Enter your score")
+
+        if (score >= 80){
+            console.log("A")
+        }else if( score >=70){
+            console.log("B")
+        }else if(score >=60){
+            console.log("C")
+        }else if(score >=50){
+            console.log("D")
+        }else {
+            console.log("F")
+        }
+
+
+        const month=prompt("Enter your month")
+
+        switch (month) {
+        case 'september':
+        case 'october':
+        case 'november':
+            console.log("Autumn") ;
+            break
+        case 'december':
+        case 'january':
+        case 'february':
+            console.log ("winter");
+            break
+        case 'march':
+        case 'april':
+        case 'may':
+            console.log ("Spring");
+            break
+        case 'june':
+        case 'july':
+        case 'august':
+            console.log("Summer");
+        default:
+            console.log("wrong input");
+    }
+
+    const day = prompt("Enter the current day")
+
+    switch (day) {
+        case 'Monday':
+        case 'Tuesday':
+        case 'Wednesday':
+        case 'Thursday':
+        case 'Friday':
+            console.log(`${day} is a working day`)
+            break
+        case 'Saturday':
+         case 'Sunday'  :
+            console.log(`${day} is weekend`)
+    }
+
+const newMonth = prompt("Enter a month")
+
+let january = "31 days"
+let february = "28 days"
+let march = "31 days"
+let april ="30 days"
+let may="31 days"
+let june ="30 days"
+let july ="31 days"
+let august="31 days"
+let september ="30 days"
+let october ="31 days"
+let november ="30 days"
+let december ="31 days"
+
+console.log(`${newMonth} has ${january}`)
+
+    </script>
+</body>
+</html>
